@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Alegreya+Sans:wght@300&family=Alegreya:ital,wght@0,400;0,500;1,400;1,700&family=Caveat:wght@400;500;600;700&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@200;400;700&family=Spline+Sans+Mono:wght@500&display=swap');
+* {
+  font-family: 'Caveat', cursive;
+}
+
+body {
+overflow-x: hidden;
+}
+
+/*Header*/
+
+/* Loading (Layer On Layer Body)*/ 
+#loading {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 999999999999;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 5px solid #e74c3c;
+  position: relative;
+  animation: load 2s linear infinite;
+}
+
+.loader::before,.loader::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.loader::before {
+  border-top: 5px solid #e67e22;
+  transform: rotate(120deg);
+}
+
+.loader::after {
+  border-top: 5px solid #3498db;
+  transform: rotate(240deg);
+}
+
+.loader span {
+  position: absolute;
+  font-size: small;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  animation: a2 2s linear infinite;
+}
+
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes a2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.navbar .nav-link  {
+  color: #000;
+  font-weight: 800;
+}
+
+
+header {
+  width: 100%;
+  height: 100vh;
+ background-image: url(../images/84770f_8323103996f340df8b2b2d8504ce201f.jpg);
+ background-repeat: no-repeat;
+ background-position: top center;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+
+
+.header-layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(61, 46, 46, 0.3);
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-item {
+  font-weight: bolder;
+  padding-right: 25px;
+}
+
+.nav-link {
+  font-size: 25px;
+}
+.main-header h6 {
+  color: #fff;
+}
+.main-header h1 {
+  font-size: 120px;
+  color: white;
+  margin: 0 20px;
+}
+.main-header p {
+  color: white;
+}
+#demo:hover {
+color: #fff;
+}
+/* 
+.main-header  button.btn {
+  padding: 15px 40px;
+  border: 5px solid white;
+  transition:  border-color  0.5s , background-color 0.5s , transform 0.5s;
+  color: white;
+
+} */
+
+.nav-link {
+  color: white;
+  transition: color 0.5s;
+}
+.nav-link:hover {
+  color: chocolate;
+}
+
+
+/* .main-header  button.btn:hover {
+  border-color: black;
+  background-color: black;
+  transform: translateY(-3px);
+ 
+} */
+.main-content img {
+vertical-align: super;
+}
+.main-content img:last-child {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width:750px) {
+  .main-header h1 {
+    font-size: 40px;
+    display: block;
+  }
+  .main-content img {
+    width: 40px;
+  }
+  .main-header  button.btn {
+    padding: 10px 20px;
+  }
+}
+
+
+.color-box {
+  background-color: red;
+  position: fixed;
+  top: 200px;
+  left: 0px;
+  display: flex;
+  z-index: 9999;
+
+}
+
+.color-option {
+  background-color: teal;
+  padding: 5px;
+}
+.color-box i {
+  background-color: chartreuse;
+  height: fit-content;
+}
+
+.color-option ul li {
+  width: 20px;
+  height: 20px;
+  background-color: brown;
+  display: inline-block;
+}
+.btn-header {
+  cursor: pointer;
+}
+
+/*Header*/
+
+/*Story*/
+.story , #order , #Private-Events {
+  border-top: 8px solid black;
+}
+.story .middle-p {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+@media screen and (max-width:700px) {
+  .story .middle-p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:900px) {
+
+  .story .story-img img  {
+    width: 100%;
+  }
+}
+/*Story*/
+
+/*Order*/
+#order {
+  height: 900px;
+  background-image: url(../images/Order.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.order-r1  {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #fff;
+  transform: rotate(45deg);
+  top:47%;
+  left: 27%;
+  
+}
+#order .div-order1 {
+  top: 56%;
+  left: 29%;
+  font-size: 55px;
+  font-weight: 800;
+  color: #fff;
+  
+}
+
+.order-r2 {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #fff;
+  transform: rotate(45deg);
+  top: 12%;
+  left: 54%;
+}
+
+#order .div-order2 {
+  top: 23%;
+  left: 56%; 
+  font-size: 55px;
+  font-weight: 800;
+  color: #fff;
+}
+
+button.btn-animate  {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background: #000;
+  border: none;
+  color: #fff;
+}
+
+button.btn-animate:hover{
+  letter-spacing: 0.25em;
+  background: #000;
+  color: #000;
+  box-shadow: 0 0 15px #000;
+
+}
+
+button.btn-animate::before  {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: transparent;
+}
+
+button.btn-animate span {
+  position: relative;
+  z-index: 1;
+}
+
+button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+button.btn-animate i::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #000;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+button.btn-animate:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+button.btn-animate i::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #000;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+button.btn-animate:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+@media screen and (max-width:950px) {
+  #order {
+    display: none;
+  }
+}
+
+
+/*Order*/
+
+/*Reservation*/
+
+.dropdown .btn {
+color: #fff;
+background-color: #000;
+ 
+}
+
+.drop-menus a {
+  padding: 0 50px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+
+}
+
+.img-reservation img {
+  filter: grayscale(100%);
+  transition: 0.5s ease-in-out;
+  
+}
+
+.img-reservation:hover img {
+  filter: grayscale(0%);
+}
+
+
+/*Reservation*/
+
+/*Footer*/
+
+footer {
+  background-color: #000;
+}
+
+
+a.btn-footer {
+  width: 140px;
+  height: 56px;
+  overflow: hidden;
+  border: none;
+  color: #fff;
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+}
+
+a.btn-footer > div,a > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+a.btn-footer:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+a.btn-footer:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a.btn-footer .clone > *,a .text > * {
+  opacity: 1;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  margin-left: 4px;
+}
+
+a.btn-footer .clone > * {
+  transform: translateY(60px);
+}
+
+a.btn-footer:hover .clone > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+a.btn-footer:hover .text > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+a.btn-footer:hover .clone > :nth-child(1) {
+  transition-delay: 0.15s;
+}
+
+a.btn-footer:hover .clone > :nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+a.btn-footer:hover .clone > :nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+a.btn-footer:hover .clone > :nth-child(4) {
+  transition-delay: 0.3s;
+}
+/* icon style and hover */
+a.btn-footer svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-50deg);
+  transition: 0.2s ease-out;
+}
+
+a.btn-footer:hover svg {
+  transform: translateY(-50%) rotate(-90deg);
+}
